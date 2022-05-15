@@ -21,9 +21,22 @@ body {
     outline: 1px solid red;
 }
 
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* цвет лого */
@@ -48,6 +61,11 @@ ul {
     list-style: none;
 }
 /* блок навигации */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
 .site-nav-link {
     font-weight: 500;
     font-size: 14px;
@@ -55,7 +73,15 @@ ul {
     letter-spacing: 0.02em;
     color: var(--second-txt-cl);
     text-decoration: none;
+    margin-right: 50px;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+.site-nav-link: :last-child {
+    margin-right: 0;
+}
+
 .site-nav-link:hover,
 .site-nav-link:focus {
     color: var(--accent-color);
@@ -85,19 +111,32 @@ ul {
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
     text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 /* Герой */
 .hero {
     color: #FFFFFF;
-    background-color: #2F303A;
+    background-color: #2F303A; 
 }
+.container-hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-right: 252px;
+    padding-bottom: 280px;
+    padding-left: 252px;
+}
+
 .hero-title {
     text-transform: uppercase;
     text-align: center;
+    width: 696px;
     letter-spacing: 0.06em;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    padding: auto;
 }
 /* Кнопка */
 .button {
@@ -108,8 +147,28 @@ ul {
     background-color: var(--accent-color);
     font-family: inherit;
     cursor: pointer;
+    display: block;
+    padding: 10px 32px;
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 200px;
 }
+
 /* особенности */
+.specifics-list {
+    display: flex;
+}
+.specific-item {
+    width: 270px;
+    height: 101px;
+    margin-right: 30px;
+}
+.specific-item:last-child {
+    margin-right: 0;
+}
 .specific-title {
     font-weight: 700;
     font-size: 14px;
@@ -117,6 +176,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-txt-cl);
+    margin-bottom: 10px;
 }
 .specific-text {
     font-size: 14px;
@@ -125,33 +185,59 @@ ul {
     color: var(--main-txt-cl);
 }
  /* Чем мы занимаемся */
+.work {
+    margin-bottom: 94px;
+}
  .work-title {
      font-weight: 700;
      font-size: 36px;
      line-height: 1.17;
      letter-spacing: 0.03em;
      color: var(--second-txt-cl);
+     margin-bottom: 50px;
+     text-align: center;
  }
+ .work-item {
+     display: flex;
+ }
+.work-list {
+    margin-right: 30px;
+}
+.work-list:last-child {
+    margin-right: 0;
+}
  /* команда */
  .team {
      color: var(--second-txt-cl);
      background-color: #F5F4FA;
+     text-align: center;
+ }
+ .team-list {
+     display: flex;
  }
  .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
  }
  .team-item {
     background-color: #FFFFFF;
+    margin-right: 30px;
  }
+ .team-item:last-child {
+     margin-right: 0;
+ }
+
  .team-name {
      font-weight: 500;
      font-size: 16px;
      line-height: 1.19;
      text-align: center;
      letter-spacing: 0.03em;
+     margin-bottom: 10px;
+     margin-top: 30px;
  }
 
  .team-position {
@@ -160,10 +246,13 @@ ul {
       text-align: center;
       letter-spacing: 0.03em;
       color: var(--main-txt-cl);
+      margin-bottom: 30px;
  }
 /* Подвал */
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -189,7 +278,16 @@ ul {
     text-decoration: none;
     font-weight: 400;
 }
-
+.item-footer {
+    margin-bottom: 9px;
+}
+.item-footer:last-child {
+    margin-bottom: 0px;
+}
+.footer-address {
+    display: block;
+    margin-top: 20px;
+}
 .footer-tel,
 .footer-mailto {
     font-size: 14px;
@@ -201,6 +299,12 @@ ul {
 }
 
 /* Main portfolio */
+.section .list-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-portfolio {
     font-weight: 500;
     font-size: 16px;
@@ -211,8 +315,20 @@ ul {
     background-color: #F5F4FA;
     cursor: pointer;
     font-family: inherit;
+    padding: 6px 32px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 50px;
     
 }
+.container .btn-portfolio {
+    margin-right: 8px;
+}
+
+.list-portfolio .btn-portfolio:last-child {
+    margin-left: 0;
+}
+
 .btn-portfolio:hover,
 .btn-portfolio:focus {
     color: #FFFFFF;
