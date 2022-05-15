@@ -2,6 +2,7 @@
     --main-txt-cl: #757575;
     --second-txt-cl: #212121;
     --accent-color: #2196F3;
+    --card-set-qap: 30px;
 }
 /* Главная */
 body {
@@ -29,6 +30,11 @@ img {
     display: block;
 }
 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -119,24 +125,25 @@ ul {
 .hero {
     color: #FFFFFF;
     background-color: #2F303A; 
+    display: block;
+    align-items: center;
 }
 .container-hero {
-    height: 600px;
-    padding-top: 200px;
-    padding-right: 252px;
-    padding-bottom: 280px;
-    padding-left: 252px;
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 200px;
 }
 
 .hero-title {
     text-transform: uppercase;
-    text-align: center;
     width: 696px;
     letter-spacing: 0.06em;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    padding: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Кнопка */
 .button {
@@ -147,14 +154,11 @@ ul {
     background-color: var(--accent-color);
     font-family: inherit;
     cursor: pointer;
-    display: block;
     padding: 10px 32px;
     min-width: 200px;
     min-height: 50px;
     border-radius: 4px;
     border: none;
-    margin-top: 30px;
-    margin-bottom: 200px;
 }
 
 /* особенности */
@@ -318,7 +322,6 @@ ul {
     padding: 6px 32px;
     border: none;
     border-radius: 4px;
-    margin-bottom: 50px;
     
 }
 .container .btn-portfolio {
@@ -327,6 +330,9 @@ ul {
 
 .list-portfolio .btn-portfolio:last-child {
     margin-left: 0;
+}
+.list-portfolio {
+    margin-bottom: 50px;
 }
 
 .btn-portfolio:hover,
@@ -341,6 +347,10 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-txt-cl);
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 4px;
 }
 
 .subtitle {
@@ -348,7 +358,24 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 20px;
 }
 .title-hidden {
     visibility: hidden;
+}
+ /* card set */
+
+ .card-set {
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: calc(-1 * var(--card-set-qap));
+     margin-top: calc(-1 * var(--card-set-qap));
+ }
+
+.card-set > .card-item {
+    margin-left: var(--card-set-qap);
+    margin-top: var(--card-set-qap);
+    flex-basis: calc(100% /3 - var(--card-set-qap);
 }
