@@ -85,10 +85,16 @@ ul {
   letter-spacing: 0.02em;
   color: var(--second-txt-cl);
   text-decoration: none;
-  margin-right: 50px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.site-nav-item {
+  margin-right: 50px;
+}
+.site-nav-item:last-child {
+  margin-right: 0;
 }
 .site-nav-link:hover,
 .site-nav-link:focus {
