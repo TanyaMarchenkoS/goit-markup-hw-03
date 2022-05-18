@@ -41,11 +41,11 @@
           </ul>
         </nav>
         <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contacts-link-mailto">info@devstudio.com</a>
+          <li class="contact-link">
+            <a href="mailto:info@devstudio.com" class="contact-link-mailto">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="tel:+380961111111" class="contacts-link-tel"> +38 096 111 11 11</a>
+          <li class="contact-link">
+            <a href="tel:+380961111111" class="contact-link-tel"> +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -53,15 +53,15 @@
     <!-- Герой -->
     <main>
       <section class="hero">
-        <div class="container container-hero">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="button" type="button">Заказать услугу</button>
         </div>
       </section>
       <!-- Секция 2 Особенности -->
-      <section class="specifics section">
+      <section class="section">
         <div class="container">
-        <h2 class="title-hidden">Особенности</h2>
+        <h2 class="visually-hidden">Особенности</h2>
         <ul class="specifics-list">
           <li class="specific-item">
             <h3 class="specific-title">Внимание к деталям</h3>
@@ -91,18 +91,18 @@
         </div>
       </section>
       <!-- Чем мы занимаемся картинки -->
-      <section class="work">
+      <section class="section work">
         <div class="container">
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-item">
             <li class="work-list">
-              <img class="work-img" src="./images/box/box1.jpg" alt="набор текста на клавиатеру" width="370" />
+              <img class="work-img" src="./images/box/box1.jpg" alt="набор текста на клавиатеру" width="370" height="294"/>
             </li>
             <li class="work-list">
-              <img class="work-img" src="./images/box/box2.jpg" alt="набор текста с телефона на ком" width="370" />
+              <img class="work-img" src="./images/box/box2.jpg" alt="набор текста с телефона на ком" width="370" height="294" />
             </li>
             <li class="work-list">
-              <img class="work-img" src="./images/box/box3.jpg" alt="цветная голограмма на планшете" width="370" />
+              <img class="work-img" src="./images/box/box3.jpg" alt="цветная голограмма на планшете" width="370" height="294" />
             </li>
         </div>
       </section>
@@ -113,23 +113,31 @@
           <ul class="team-list">
             <li class="team-item">
               <img class="team-img" src="./images/team/teamcard1.jpg" alt="Сотрудник мужчина менеджер" width="270" />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p class="team-position" lang="en">Product Designer</p>
+              <div class="team-box">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-position" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img class="team-img" src="./images/team/teamcard2.jpg" alt="Сотрудник женщина разработчик" width="270" />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p class="team-position" lang="en">Frontend Developer</p>
+              <div class="team-box">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-position" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img class="team-img" src="./images/team/teamcard3.jpg" alt="Сотрудник мужчина маркетолог" width="270" />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p class="team-position" lang="en">Marketing</p>
+              <div class="team-box">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-position" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img class="team-img" src="./images/team/teamcard4.jpg" alt="Сотрудник мужчина дизайнер" width="270" />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p class="team-position" lang="en">UI Designer</p>
+              <div class="team-box">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-position" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
